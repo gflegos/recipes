@@ -1,0 +1,57 @@
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-container">
+			<div class="grid-100 grid-parent tablet-grid-100 mobile-grid-100" id="footer">
+				<div class="grid-30 hide-on-tablet hide-on-mobile">
+					<p>Alla recept på Mums har be&shy;räknats av en kraft&shy;full super&shy;dator. Då super&shy;datorers mat&shy;smältning skiljer sig från män&shy;niskors ges inga garantier för ätbarhet.</p>
+				</div>
+				<div class="grid-40 tablet-grid-60 mobile-grid-66">
+					<p>Genom att använda Mums godkänner du att <a href="http://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm" target="_blank">cookies</a> sparas på din enhet.</p>
+					<p>Ikoner av <a href="http://www.flaticon.com/authors/madebyoliver/" target="_blank">Madebyoliver på Flaticon</a>, använda under <a href="http://file000.flaticon.com/downloads/license/license.pdf" target="_blank">Flaticon Basic License</a>.</p>
+				</div>
+				<div class="grid-30 tablet-grid-40 mobile-grid-33 grid-parent">
+					<div id="not-authenticated" class="hide-on-mobile">
+						<form id="login" name="login" action="" class="footer-form" onsubmit="return loginValidate()" method="post">
+							<input type="text" name="username" id="username-field" class="textbox" placeholder="Användarnamn" onsubmit="">
+							<input type="password" name="password" id="password-field" class="textbox" placeholder="Lösenord"><br>
+							<input type="submit" class="footer-submit user-control-item" id="login-button" value="Logga in">
+							<a class="user-control-item" href="newAccount.cgi">Nytt konto</a>
+							<span id="login-message"></span>
+						</form>
+					</div>
+					<div id="not-authenticated-mobile" class="hide-on-desktop hide-on-tablet">
+						<div class="user-controls">
+							<a class="user-control-item" href="login.cgi">Logga in</a>
+							<a class="user-control-item" href="newAccount.cgi">Nytt konto</a>
+						</div>
+					</div>
+					<div id="authenticated">
+						<p class="user-controls">
+							<span id="identity"></span><br>
+							<a class="user-control-item" href="newRecipe.cgi">Nytt recept</a>
+							<a class="user-control-item" id="user-link">Dina recept</a>
+							<a class="user-control-item" href="javascript:void(0)" id="logout" onclick="logout();">Logga ut</a>
+						</p>
+					</div>
+				</div>
+				<img href="javascript:void(0)" src="images/svg/icons/error.svg" class="icon footer-icon hide-on-mobile" id="collapse-icon">
+				<img href="javascript:void(0)" src="images/svg/icons/plus.svg" class="icon footer-icon hide-on-mobile" id="expand-icon">
+			</div>
+		</div>
+		<div id="preload">
+			<img src="images/svg/icons/ice-cream-10-hover.svg">
+			<img src="images/svg/icons/steak-hover.svg">
+			<img src="images/svg/icons/glass-3-hover.svg">
+			<img src="images/svg/icons/olives-hover.svg">
+			<img src="images/svg/icons/star2passive-hover.svg">
+			<img src="images/svg/icons/starpassive-hover.svg">
+			<img src="images/svg/icons/plus-hover.svg">
+			<img src="images/svg/icons/error-hover.svg">
+			<img src="images/svg/icons/forward-button (1).svg">
+			<img src="images/svg/icons/back-button (1).svg">
+		</div>
+	</body>
+</html>

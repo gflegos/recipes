@@ -1,0 +1,7 @@
+test/
+__pycache__/
+config.json
+mumsTest.py
+mumsAccount.py
+test.html
+.well-known/

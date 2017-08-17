@@ -1,0 +1,38 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"definitions": {},
+	"id": "http://mums.cf/static-content/recipeschema.json",
+	"properties": {
+        "description": {
+            "id": "/properties/description",
+            "type": "string"
+        },
+        "ingredients": {
+            "id": "/properties/ingredients",
+            "items": {
+                "id": "/properties/ingredients/items",
+                "properties": {
+                    "amount": {
+                        "id": "/properties/ingredients/items/properties/amount",
+                        "type": "string"
+                    },
+                    "ingredient": {
+                        "id": "/properties/ingredients/items/properties/ingredient",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "instructions": {
+            "id": "/properties/instructions",
+            "items": {
+                "id": "/properties/instructions/items",
+                "type": "string"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}
