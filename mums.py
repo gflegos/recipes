@@ -69,3 +69,7 @@ def getStaticHTML():
 	upperHTML = open('static-content/upper.html', encoding = 'utf-8').read()
 	lowerHTML = open('static-content/lower.html', encoding = 'utf-8').read()
 	return {'preTitle': preTitleHTML, 'upper': upperHTML, 'lower': lowerHTML}
+
+def getConfig():
+	config = json.loads(open("config.json").read())
+	return config

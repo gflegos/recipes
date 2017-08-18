@@ -14,7 +14,7 @@ def main():
 	mums.sqlExecute(connection, sql, args)
 	connection.close()
 	
-	config = json.loads(open("config.json").read())
+	config = mums.getConfig()
 	subject = "Aktivera ditt Mums-konto"
 	text = "<html><body><a href=\"{0}activate.cgi?code={1}\">Aktivera ditt Mums-konto.</a></body></html>".format(config['url'], code)
 	message = "From: Mums <{0}>\nTo: {1}\nSubject: {2}\nContent-Type: text/html; charset=utf-8\nContent-Transfer-Encoding: 7bit\n\n{3}".format(config['emailAddress'], emailAddress, subject, text)

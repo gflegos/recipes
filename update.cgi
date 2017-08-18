@@ -5,8 +5,9 @@ from datetime import datetime
 
 def main():
 	token = cgi.FieldStorage()["token"].value
+	config = mums.getConfig()
 	try:
-		data = jwt.decode(token.encode(), mums.mumsHash('Klezmer1991'))
+		data = jwt.decode(token.encode(), mums.mumsHash(config['tokenKey']))
 	except InvalidTokenError:
 		current = False
 		username = None

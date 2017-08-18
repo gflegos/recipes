@@ -6,7 +6,8 @@ from datetime import datetime
 def main():
 	data = cgi.FieldStorage()
 	comment = data['comment'].value
-	token = jwt.decode(data['token'].value, mums.mumsHash('Klezmer1991'))
+	config = mums.getConfig()
+	token = jwt.decode(data['token'].value, mums.mumsHash(config['tokenKey']))
 	userID = token['userid']
 	recipeID = data['recipeID'].value
 	connection = mums.sqlConnect()
